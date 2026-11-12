@@ -1,0 +1,41 @@
+<section class="education section" id="education">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Academic Background</span>
+      <h2 class="section-title">Formal <span class="accent">Education</span></h2>
+      <p class="section-desc">Engineering degree in Computer Science and software engineering fundamentals.</p>
+    </div>
+
+    <div class="education-card">
+      <div class="edu-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+        </svg>
+      </div>
+
+      <div class="edu-content">
+        <h3 class="institution-name">{{ education.institution }}</h3>
+        <div class="degree-title">{{ education.degree }} in {{ education.field }}</div>
+
+        <div class="edu-meta-row">
+          <span class="meta-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            Academic Score: <strong>{{ education.gpa }}</strong>
+          </span>
+          <span class="meta-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            Graduation Year: <strong>{{ education.year }}</strong>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

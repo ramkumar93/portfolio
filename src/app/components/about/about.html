@@ -1,0 +1,49 @@
+<section class="about section" id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Profile Overview</span>
+      <h2 class="section-title">About <span class="accent">Ramkumar</span></h2>
+      <p class="section-desc">Engineering leadership, distributed systems design, and full-stack software delivery.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card profile-card">
+        <div class="profile-avatar">
+          <span class="avatar-initials">RK</span>
+        </div>
+        <h3 class="profile-name">Ramkumar Ketti Moorthy</h3>
+        <p class="profile-title">Lead Software Engineer</p>
+        <div class="profile-meta">
+          <div class="meta-item">
+            <span class="meta-label">Location</span>
+            <span class="meta-val">Dallas, Texas</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Total Experience</span>
+            <span class="meta-val">11+ Years</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Current Role</span>
+            <span class="meta-val">IBM (Lead SE)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-details">
+        <div class="summary-card">
+          <h4 class="card-title">Executive Summary</h4>
+          <p class="about-summary">{{ summary }}</p>
+        </div>
+
+        <div class="stats-grid">
+          @for (stat of stats; track stat.label) {
+            <div class="stat-card">
+              <div class="stat-value">{{ stat.value }}</div>
+              <div class="stat-label">{{ stat.label }}</div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

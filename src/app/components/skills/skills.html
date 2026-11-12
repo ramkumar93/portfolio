@@ -1,0 +1,25 @@
+<section class="skills section" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Core Competencies</span>
+      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      <p class="section-desc">Comprehensive toolset spanning backend, frontend, cloud infrastructure, and AI engineering.</p>
+    </div>
+
+    <div class="skills-grid">
+      @for (category of skillCategories; track category.category) {
+        <div class="skill-card">
+          <div class="card-header">
+            <h3 class="category-name">{{ category.category }}</h3>
+            <span class="count-badge">{{ category.skills.length }}</span>
+          </div>
+          <div class="skill-tags">
+            @for (skill of category.skills; track skill) {
+              <span class="skill-tag">{{ skill }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
