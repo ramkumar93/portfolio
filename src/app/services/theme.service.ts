@@ -6,7 +6,7 @@ export type Theme = 'light' | 'dark';
   providedIn: 'root'
 })
 export class ThemeService {
-  private readonly THEME_KEY = 'rk-portfolio-theme';
+  private readonly THEME_KEY = 'rk-portfolio-theme-v2';
   readonly currentTheme = signal<Theme>(this.getInitialTheme());
 
   constructor() {
@@ -29,10 +29,8 @@ export class ThemeService {
     if (saved === 'light' || saved === 'dark') {
       return saved;
     }
-    if (typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-      return 'light';
-    }
-    return 'dark';
+    // Default to light theme
+    return 'light';
   }
 
   private applyTheme(theme: Theme): void {

@@ -28,18 +28,31 @@
     gap: 0.75rem;
     cursor: pointer;
 
-    .brand-monogram {
-      width: 38px;
-      height: 38px;
-      border-radius: 8px;
-      background: var(--primary);
-      color: #ffffff;
+    .brand-photo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid var(--border-primary);
+      overflow: hidden;
+      flex-shrink: 0;
+      background-color: var(--bg-surface-elevated);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 700;
-      font-size: 0.95rem;
-      letter-spacing: -0.02em;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+
+      .brand-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%;
+        display: block;
+      }
+    }
+
+    &:hover .brand-photo {
+      border-color: var(--primary);
+      transform: scale(1.05);
     }
 
     .brand-details {
