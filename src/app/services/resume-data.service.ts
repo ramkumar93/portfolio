@@ -40,7 +40,7 @@ export interface Stat {
 export class ResumeDataService {
 
   readonly name = 'Ramkumar Ketti Moorthy';
-  readonly title = 'Lead Full Stack Engineer';
+  readonly title = 'Full Stack Engineer';
   readonly location = 'Dallas, TX';
   readonly email = 'kmramkumar210@gmail.com';
   readonly linkedin = 'linkedin.com/in/ramkumarkm';
@@ -93,7 +93,7 @@ driving performance, scalability, and reliability at enterprise scale.`;
   readonly experiences: Experience[] = [
     {
       company: 'IBM',
-      role: 'Lead Software Engineer',
+      role: 'Full Stack Engineer',
       period: 'Feb 2019 – Present',
       location: 'Dallas, Texas',
       current: true,
